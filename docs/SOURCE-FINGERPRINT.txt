@@ -1,0 +1,2 @@
+SHA256 of source, tests, vendors, public assets and build configuration
+3b696d2f10088d32bd0efda94e03acfea978c287df1fb6676d953a5694dc0f8a

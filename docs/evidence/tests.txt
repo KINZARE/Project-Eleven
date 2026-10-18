@@ -1,0 +1,50 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> project-eleven@0.1.0 test
+> vitest run --reporter=verbose
+
+
+ RUN  v5.0.5 /workspace/scratch/361b1be4fcf3/project-eleven
+
+ ✓ tests/data.test.ts > reports duplicates and never installs a partial roster 14ms
+ ✓ tests/data.test.ts > accepts CSV quoting and preserves canonical external IDs 1ms
+ ✓ tests/core.test.ts > world and calendar invariants > is reproducible and has unique players 91ms
+ ✓ tests/core.test.ts > world and calendar invariants > schedules every pair home and away with one fixture per round 1ms
+ ✓ tests/core.test.ts > world and calendar invariants > derives the table from results 9ms
+ ✓ tests/emergency.test.ts > allows an opponent to continue when both goalkeepers are unavailable 107ms
+ ✓ tests/match.test.ts > runs actual reproducible pitch simulation and reacts to tactical input 193ms
+ ✓ tests/core.test.ts > world and calendar invariants > applies a day idempotently and never mutates input 11ms
+ ✓ tests/core.test.ts > world and calendar invariants > selects eleven unique eligible players and a goalkeeper 3ms
+ ✓ tests/core.test.ts > world and calendar invariants > does not record a result twice 6ms
+ ✓ tests/core.test.ts > world and calendar invariants > will not start a new season with unfinished matches 4ms
+ ✓ tests/core.test.ts > management transactions > transfers one player once and balances both clubs 30ms
+ ✓ tests/core.test.ts > management transactions > rejects negative and nonfinite bids without changing state 11ms
+ ✓ tests/core.test.ts > management transactions > rejects unaffordable transfers 2ms
+ ✓ tests/core.test.ts > management transactions > renews a player contract with real wage consequences 7ms
+ ✓ tests/core.test.ts > management transactions > assigns training and scouting, and records investment costs 11ms
+ ✓ tests/core.test.ts > management transactions > youth promotion changes selection eligibility 4ms
+ ✓ tests/core.test.ts > gives incoming transfers a free shirt number in the buying club 7ms
+ ✓ tests/core.test.ts > attributes goals by canonical ID even when names are identical 6ms
+ ✓ tests/core.test.ts > never schedules a club twice on the same date across league and cup 11ms
+ ✓ tests/core.test.ts > credits appearances to actual match participants rather than a stale saved lineup 5ms
+ ✓ tests/core.test.ts > rejects kickoff before it locks a career into an invalid lineup 10ms
+ ✓ tests/saves.test.ts > roundtrips a career with backup and rejects stale overwrites 174ms
+ ✓ tests/saves.test.ts > rejects corruption and unsupported save versions 47ms
+ ✓ tests/saves.test.ts > rejects valid-checksum files with malformed nested fields 9ms
+ ✓ tests/saves.test.ts > refuses two different saves at the same revision 33ms
+ ✓ tests/saves.test.ts > rejects missing active match references and out-of-bounds replay commands 10ms
+ ✓ tests/stress.test.ts > validates 100 independent generated worlds and round-robin schedules 668ms
+ ✓ tests/ui.test.tsx > creates a career through the UI, edits a player training focus, and reloads its persisted save 943ms
+ ✓ tests/match.test.ts > uses requested substitutes and refuses players who are not on the bench 28ms
+ ✓ tests/match.test.ts > completes a full deterministic ninety-minute match 4505ms
+ ✓ tests/match.test.ts > uses the saved named bench rather than choosing a different one 4ms
+ ✓ tests/match.test.ts > preserves the same on-field players, cards and substitutions into extra time 6ms
+ ✓ tests/match.test.ts > does not invent engine-only substitutes when the registered bench is empty 4ms
+ ✓ tests/stress.test.ts > survives 100 season transitions with histories, youth and reconciled ledgers 62322ms
+ ✓ tests/stress.test.ts > plays one complete season using the real engine and starts the next 218083ms
+
+ Test Files  7 passed (7)
+      Tests  36 passed (36)
+   Start at  18:54:20
+   Duration  281.53s (tests 99%)
+

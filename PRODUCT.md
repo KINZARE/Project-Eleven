@@ -1,0 +1,2 @@
+# Project Eleven
+Mobile football manager. Local single player, no login or payments. Dutch first. Decisions affect a deterministic persistent world. Success means a multi-season career survives browser restart. The user authorized the supplied full master prompt and implementation. Render replaces Vercel by explicit user instruction. Licensed dataset is not supplied: fictional development world is visibly labelled. Never describe this build as a licensed production release.
